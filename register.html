@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Register - Arocade</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="nav-bar">
+        <a class="navbar-brand" href="#">Arocade</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Catergory
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Technology</a>
+                        <a class="dropdown-item" href="#">Lifestyle</a>
+                        <!-- <div class="dropdown-divider"></div> -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <!-- <a href="" class="btn btn-info mr-2 my-2 my-sm-0">Sign in</a> -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-info mr-2" data-toggle="modal" data-target="#signInModel">
+                Sign In
+            </button>
+
+            <a href="register.html" class="btn btn-info mr-5 my-2 my-sm-0">Sign Up</a>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+
+
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="signInModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign in here</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container-fluid bg-dark py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="btn-group" role="group" aria-label="Basic example" id="register-buttons">
+                    <button type="button" class="btn btn-secondary" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Sign In</button>
+                    <button type="button" class="btn btn-secondary" autofocus data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="true" aria-controls="collapseTwo">Sign Up</button>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="accordion" id="accordionExample">
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card p-4">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card p-4">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Confirm Password">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white  py-5 px-4" id="footer">
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4 my-3 my-md-3 my-xl-0">
+                <h2>Arocade</h2>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ab et nulla, modi totam molestias
+                    perferendis. Veniam, suscipit. Dolores maiores voluptatum maxime quas laudantium recusandae optio
+                    consequuntur quidem sint magni!</p>
+                <br>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="btn btn-primary ml-1"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="btn btn-primary ml-1"><i class="fab fa-youtube"></i></a>
+                    <a href="" class="btn btn-primary ml-1"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 text my-3 my-md-3 my-xl-0" id="footer-information">
+                <h2>Information</h2>
+                <ul class="list-group" style="list-style: none;">
+                    <li><i class="fa fa-angle-right"></i></i>&nbsp; <a href="" class="text-white">Home</a></li>
+                    <li><i class="fa fa-angle-right"></i></i>&nbsp; <a href="" class="text-white">Link 1</a></li>
+                    <li><i class="fa fa-angle-right"></i></i>&nbsp; <a href="" class="text-white">Link 2</a></li>
+                    <li><i class="fa fa-angle-right"></i></i>&nbsp; <a href="" class="text-white">Link 3</a></li>
+                    <li><i class="fa fa-angle-right"></i></i>&nbsp; <a href="" class="text-white">Link 4</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-12 col-xl-4 my-3 my-md-3 my-xl-0">
+                <h2>Have a question ?</h2>
+                <br>
+                <p><a href="" class="btn btn-primary"><i class="fa fa-map"></i></a>&nbsp;&nbsp;&nbsp;203 Fake St.
+                    Mountain View, San Francisco, California, USA
+                </p>
+                <p><a href="" class="btn btn-primary"><i class="fa fa-phone"></i></a>&nbsp;&nbsp;&nbsp;+91-8565853044
+                </p>
+                <br>
+                <p><a href="" class="btn btn-primary"><i class="fa fa-envelope"></i></a>&nbsp;&nbsp;&nbsp;
+                    anandjaiswal68339@gmail.com
+                </p>
+
+            </div>
+        </div>
+        <hr class="bg-light">
+        <div class="row">
+            <div class="col-12 text-center">
+                <small>Copyright ©2020 All rights reserved </small>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
