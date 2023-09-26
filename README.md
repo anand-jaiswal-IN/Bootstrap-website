@@ -20,7 +20,7 @@ This project represents my initial exploration into web development with Bootstr
 - Custom styling: While Bootstrap provides a solid foundation, I've also added some custom CSS to personalize the website.
 
 ## Access my website
-Go through this link - [Demo](https://anand-jaiswal-in.github.io/Bootstrap-website/)
+Go through this link - [Demo](https://anand-jaiswal-in.github.io/bootstrap-website/)
 
 ---
 Thankyou for coming to my github account. You certainly have to explore my another repositories.
